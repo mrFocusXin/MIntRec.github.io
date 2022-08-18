@@ -15,7 +15,7 @@ h1.big,p,h2,h3{
 }
 
 .button {
-    background-color: #323; /* Green */
+    background-color: #4371C6; /* Green */
     color: white;
     padding: 8px;
 	width: 80%;
@@ -25,7 +25,7 @@ h1.big,p,h2,h3{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border: 2px solid #323;
+    border: 2px solid #4371C6;
     border-radius: 32px!important;
 }
 /* Darker background on mouse-over */
@@ -37,7 +37,7 @@ h1.big,p,h2,h3{
 .header {
     padding: 50px;
     text-align: center;
-    background: #313;
+    background: #4371C6;
     color: white;
 }
 
@@ -49,7 +49,7 @@ h1.big,p,h2,h3{
 /* Style the top navigation bar */
 .navbar {
     overflow: hidden;
-    background-color: #323;
+    background-color: #4371C6;
 }
 
 /* Style the navigation bar links */
