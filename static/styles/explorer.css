@@ -14,7 +14,7 @@ li {
 }
 
 .sidenav {
-    background-color: #313;
+    background-color: #4371C6;
     padding-top: 20px;
 }
 
@@ -43,14 +43,14 @@ li {
 }
 
 .active {
-    background-color: #313;
+    background-color: #4371C6;
     color: white;
 }
 
 
 .dropdown-container {
     display: none;
-    background-color: #313;
+    background-color: #4371C6;
     padding-left: 8px;
 }
 
@@ -64,5 +64,5 @@ li {
 }
 
 .col-md-3 {
-	background-color: #313;
+	background-color: #4371C6;
 }
