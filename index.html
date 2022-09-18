@@ -117,8 +117,19 @@
               <br>
               <br>
                 <center>
+                  <style>
+                    #my_button_left.btn-default{
+                      border-top-left-radius:5px !important; 
+                      border-bottom-left-radius: 5px !important;
+                    }
+
+                    #my_button_right.btn-default{
+                      border-top-right-radius:5px !important; 
+                      border-bottom-right-radius: 5px !important;
+                    }
+                  </style>
                   <div   class="" role="group"  >
-                    <button  onclick="raw_data()" type="button" class="btn btn-default col-md-4 ">
+                    <button id='my_button_left' onclick="raw_data()" type="button" class="btn btn-default col-md-4 ">
                       <!-- style="background-color: #999"; -->
                     
                         <!-- href="https://drive.google.com/drive/folders/18iLqmUYDDOwIiiRbgwLpzw76BD62PK0p" -->
@@ -139,7 +150,7 @@
                       <strong> Features </strong>
                    
                     </button>
-                    <button onclick="Fork_On_Github()" type="button" class="btn btn-default col-md-4">
+                    <button id='my_button_right' onclick="Fork_On_Github()" type="button" class="btn btn-default col-md-4">
                       <!-- <a href="https://github.com/thuiar/MIntRec"> -->
                       <p style='  color:#595959; font-weight: 400;font:15px -apple-system'>
                         Fork On
