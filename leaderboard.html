@@ -37,7 +37,7 @@
  
 <!-- 引入 layui.js -->
 <script src="//unpkg.com/layui@2.7.6/dist/layui.js"></script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+<!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" -->
   
 </script>
       </head>
@@ -57,22 +57,15 @@
         }
       </style>
       <body>
-        
         <script>
           function raw_data(){
-          window.location.href='raw_data.html'
-        }
-        function Features(){
-          window.location.href='Features_1.html'
-        }
-        function Fork_On_Github(){
-          window.location.href='Fork_On_Github.html'
+          window.location.href='count_test1.html'
         }
         </script>
         
-        <ul class="layui-nav"   lay-filter="">
-          <li lay-unselect class="layui-nav-item layui-this"><a href="index.html">Home</a></li>
-          <li lay-unselect class="layui-nav-item"><a href="leaderboard.html">Leaderboard</a></li>
+        <ul class="layui-nav" lay-filter="">
+          <li class="layui-nav-item "><a href="index.html">Home</a></li>
+          <li class="layui-nav-item layui-this"><a href="count_test1.html">Leaderboard</a></li>
           
        
         </ul>
@@ -87,11 +80,8 @@
         </script>
               
       <div class="container">
-        
           <div class="row">
-            
             <div class="col-md-3 box " style="position:fixed">
-              
               <h1 style="font-weight: 600; line-height: 1.3">MIntRec: Multimodal Intent Recognition </h1>
               <br>
               <p style='margin: 0 0 10px; color:#595959; font-weight: 400;font:18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'>
@@ -127,16 +117,16 @@
                       </a>
                       
                       </button>
-                    <button onclick="Features()" type="button" class="btn btn-default col-md-4" >
-                    <!-- <a href="https://drive.google.com/drive/folders/18iLqmUYDDOwIiiRbgwLpzw76BD62PK0p"> -->
+                    <button type="button" class="btn btn-default col-md-4" >
+                    <a href="https://drive.google.com/drive/folders/18iLqmUYDDOwIiiRbgwLpzw76BD62PK0p">
                       <p style='  color:#595959; font-weight: 400;font:15px -apple-system'>
                         Download
                       </p>
                       <strong> Features </strong>
                     </a>
                     </button>
-                    <button onclick="Fork_On_Github()" type="button" class="btn btn-default col-md-4">
-                      <!-- <a href="https://github.com/thuiar/MIntRec"> -->
+                    <button type="button" class="btn btn-default col-md-4">
+                      <a href="https://github.com/thuiar/MIntRec">
                       <p style='  color:#595959; font-weight: 400;font:15px -apple-system'>
                         Fork On
                       </p>
@@ -153,98 +143,9 @@
 
 
               <div class="col-md-7 box layui-col-md-offset5" >
-                
                 <div id="container" style="width: 100%"></div>
-                  <script id="template" type="x-tmpl-mustache">
-                    <p style='text-align:justify;margin: 0 0 10px; color:#595959; font-weight: 400;font:18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'>
-                      Multimodal intent recognition is a significant task for understanding human language in real-world multimodal scenes. Most existing
-                    intent recognition methods have limitations in leveraging the multimodal information due to the restrictions of the benchmark datasets
-                    with only text information. 
-                    It formulates coarse-grained and fine-grained intent taxonomies
-                    based on the data collected from the TV series Superstore. The
-                    dataset consists of 2,224 high-quality samples with text, video, and
-                    audio modalities and has multimodal annotations among twenty intent categories. Furthermore, we provide annotated bounding boxes
-                    of speakers in each video segment and achieve an automatic process
-                    for speaker annotation. MIntRec is helpful for researchers to mine
-                    relationships between different modalities to enhance the capability of intent recognition. We extract features from each modality
-                    and model cross-modal interactions by adapting three powerful
-                    multimodal fusion methods to build baselines.  The gap between the best-performing methods and humans indicates the challenge and importance of this task
-                    for the community. 
-                    </p>
-                    
-                      </script>
-                      <br>
-                   
-                      <!-- <div class=""> 
-                        <strong>Example of multimodal intent recognition</strong> 
-                        <img src="static/images/exmpale.png"  >
-                      </div> -->
-                      <br>
                
-                      <strong>Statistics of the MIntRec dataset</strong> 
-                      <table class="layui-table">
-                        <colgroup>
-                          <col width="300">
-                          <col width="100">
-                          <col>
-                        </colgroup>
-                        <thead>
-                          
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Total number of coarse-grained intents</td>
-                            <td>2</td>
-                             
-                          </tr>
-                          <tr>
-                            <td>Total number of fine-grained intents</td>
-                            <td>20</td>
-                          
-                          </tr>
-                          <tr>
-                            <td>Total number of videos</td>
-                            <td>43</td>
-                          
-                          </tr>
-                          <tr>
-                            <td>Total number of video segments</td>
-                            <td>2,224</td>
-                          
-                          </tr>
-                          <tr>
-                            <td>Total number of words in text utterances</td>
-                            <td> 15,658</td>
-                          
-                          </tr>
-                          <tr>
-                            <td>Total number of unique words in text utterances</td>
-                            <td> 2,562</td>
-                          
-                          </tr>
-                          <tr>
-                            <td>Average length of text utterances</td>
-                            <td> 7.04</td>
-                          
-                          </tr>
-                          <tr>
-                            <td>Maximum length of text utterances</td>
-                            <td> 26</td>
-                          
-                          </tr>
-                          <tr>
-                            <td>Average length of video segments (s)</td>
-                            <td>2.38</td>
-                          
-                          </tr>
-                          <tr>
-                            <td>Maximum length of video segments (s)</td>
-                            <td>9.59</td>
-                          
-                          </tr>
-                        </tbody>
-                      </table>
-                       
+             
                       <style>
                         #mytable tbody td{
                           font-weight: 300;
@@ -268,37 +169,138 @@
                         }
                      
                     </style>
-                    
-                    
-                    <br>
-                    <h4 style="font-weight: 600; line-height: 1.3">Citation </h4>
-                    <br>
+                    <script>
+                      
+                      function show(obj){
+                        $("#1").css("font-weight","1000");
+                        //document.getElementById("#1").style="font-weight:1000 !important";
+                        $("#leaderboard_table").empty();
+                        index=Number(obj.charAt(obj.length-1))
 
-                   
-                    <p style='text-align:justify;margin: 0 0 10px; color:#595959; font-weight: 400;font:18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'>
-                      Please cite the following papers if you use this dataset in your work.
-                    </p>
-                    <br>
-
-                    <style>
-                      #my_pre {
-                            padding: 8px 15px;
-                            background: #f8f8f8;
-                            border-radius: 5px;
-                            border: 1px solid #e5e5e5;
-                            overflow-x: auto  !important;
-                            font-weight: 500 !important; font:18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                        $.getJSON("acc.json", function(data) {
+                        
+                        score_all=new Map()
+                        sort_pre=[]
+                        
+                        i=0
+                        for (k in data){
+                          
+                          
+                          console.log('type: ',index)
+                          sort_pre.push(data[k][index])
+                          score_all.set(String(i) , data[k][index])
+                          i=i+1
                         }
-                    </style>
-                    <pre id='my_pre'>
-Hanlei Zhang, Hua Xu, Xin Wang, Qianrui Zhou, Shaojie Zhao, Jiayan Teng. MIntRec: A New Dataset for Multimodal Intent Recognition. 
+                        
+                        console.log('before sort: ',score_all)
+                        var arrayObj=Array.from(score_all);
+                        arrayObj.sort(function(a,b){return b[1]-a[1]})
+                        console.log('after sort : ',arrayObj.sort(function(a,b){return b[1]-a[1]}))
+                      
+                        sort_after = [...new Map(arrayObj.map(i => [i[0], i[1]])).keys()]
+                        console.log(sort_after)
+                        new_data = []
 
-                    </pre>
-                    
-                    
-
+                        for(q of sort_after){
+                          console.log(q)
+                          new_data.push(data[q])
+                        }
+                        
+                        console.log(new_data)
+                        count=1
+                            for(k in new_data){
+                            //  console.log(k)
+                            // console.log(data[k])
+                              
+                            // html += '<option value="'+key+'">'+data[key]+'</option>';
+                                $("#leaderboard_table").append("<tr>")
+                              
+                                // for(var i = 0; i<data.length;i++){
+                                if (count==1){
+                                  $("#leaderboard_table").append("<td style='font-weight: 800  !important'><i style='font-size: 2rem; 'class='bi bi-"+String(count) +"-circle'></i></td>");
+                                }
+                                else{
+                                  $("#leaderboard_table").append("<td ><i style='font-size: 2rem; 'class='bi bi-"+String(count) +"-circle'></i></td>");
+                                }
+                                
+                                for(var j = 0; j<5;j++){
+                                  if (count==1){
+                                    $("#leaderboard_table").append("<td style='font-weight: 800  !important'>"+new_data[k][Number(j) ]+"</td>");
+                                  }
+                                  else{
+                                    $("#leaderboard_table").append("<td>"+new_data[k][Number(j) ]+"</td>");
+                                  }
+                                }
+                                $("#leaderboard_table").append("</tr>")
+                                // }
+                              count ++
+                            }
+                        })
+                      }
+                    </script>
+                    <br>
+                      <table id='mytable' class="layui-table"  >
+                        
+                        <thead >
+                          <tr>
+                            <td class="col-md-1"><i style="font-size: 3rem; color: white;" class="bi bi-trophy"></i></td>
+                            <td class="col-md-3">Leaderboard</td>
+                           
+                            <td onclick="show('acc1')" id='1'>ACC</td>
+                            <td onclick="show('f12')" id='2'>F1</td>
+                            <td onclick="show('p3')" id='3'>Precision</td>
+                            <td onclick="show('r4')" id='4'>Recall</td>
+                             
+                          </tr>
+                        </thead>
+                        <tbody id='leaderboard_table'>
+                          
+                          
+                          <tr id = 'best' >
+                            <td><i style="font-size: 2rem; "class="bi bi-1-circle"></i></td>
+                            <td>MAG-BERT</td>
+                            <td>72.65</td>
+                            <td>68.64</td>
+                            <td>69.08</td>
+                            <td>69.28</td>
+                          
+                          </tr>
+                          <tr>
+                            <td><i  style="font-size: 2rem; "class="bi bi-2-circle"></i></td>
+                            <td>Mult</td>
+                            <td>72.52</td>
+                            <td>69.25</td>
+                            <td>70.25</td>
+                            <td>69.24</td>
+                          
+                          </tr>
+                          <tr>
+                            <td><i  style="font-size: 2rem; "class="bi bi-3-circle"></i></td>
+                            <td>MISA</td>
+                            <td>72.29</td>
+                            <td>69.32</td>
+                            <td>70.85</td>
+                            <td>69.24</td>
+                          
+                          </tr>
+                          <tr>
+                            <td><i  style="font-size: 2rem; "class="bi bi-4-circle"></i></td>
+                            <td>Classifier</td>
+                            <td>70.88</td>
+                            <td>67.40</td>
+                            <td>68.07</td>
+                            <td>67.44</td>
+                          
+                          </tr>
+                          
+                        </tbody>
+                      </table>
                   </div>
                   
+
+
+
+
                 </div>
             
                 
@@ -311,14 +313,18 @@ Hanlei Zhang, Hua Xu, Xin Wang, Qianrui Zhou, Shaojie Zhao, Jiayan Teng. MIntRec
 
                 })
                 
-             
+            function readTxt() {
+              
+                $.get('tite.txt',function(data) {    
+                    var lines = data.split("\n"); //按行读取
+                
+                    $.each(lines,function(i, v) {
+                        console.log(v);
+                    });
+                });
+            }
 
             </script>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
           </body>
       </html>
 <script type="text/javascript">
