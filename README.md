@@ -1,2 +1,2 @@
 # MIntRec
-https://thuiar.github.io/MIntRec.github.io/
+https://mintrec.github.io/
